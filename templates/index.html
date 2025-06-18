@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe API Home</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        code {
+            background-color: #e9e9e9;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Cafe API!</h1>
+        <p>This is a simple API to manage information about cafes.</p>
+
+        ---
+
+        <h2>API Endpoints:</h2>
+        <ul>
+            <li>
+                <strong>Get a Random Cafe:</strong>
+                <p><code>GET /random</code></p>
+                <p>Example: <a href="/random" target="_blank">/random</a></p>
+            </li>
+            <li>
+                <strong>Get All Cafes:</strong>
+                <p><code>GET /all</code></p>
+                <p>Example: <a href="/all" target="_blank">/all</a></p>
+            </li>
+            <li>
+                <strong>Search Cafes by Location:</strong>
+                <p><code>GET /search?loc=[location_name]</code></p>
+                <p>Replace <code>[location_name]</code> with the actual location.</p>
+                <p>Example: <a href="/search?loc=London" target="_blank">/search?loc=London</a></p>
+            </li>
+            <li>
+                <strong>Add a New Cafe:</strong>
+                <p><code>POST /add</code></p>
+                <p>Requires form data (name, map_url, img_url, location, seats, has_toilet, has_wifi, has_sockets, can_take_calls, coffee_price).</p>
+                <p>You can use the form below to add a cafe, or make a POST request with tools like Postman/Insomnia.</p>
+                <p>Go to the <a href="/add">Add Cafe Form</a></p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
