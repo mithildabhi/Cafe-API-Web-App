@@ -147,4 +147,4 @@ if __name__ == '__main__':
         else:
             print(f"Database file already exists: {db_path}. Ensuring tables are up-to-date (no changes if already exist).")
             db.create_all()
-    app.run(debug=True)
+    app.run()
